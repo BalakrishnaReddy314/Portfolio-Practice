@@ -1,17 +1,9 @@
-import { InputGroup, FormControl, Button } from "react-bootstrap";
-
 function Input() {
   return (
-    <InputGroup className="mb-3">
-      <FormControl
-        placeholder="Recipient's username"
-        aria-label="Recipient's username"
-        aria-describedby="basic-addon2"
-      />
-      <InputGroup.Append>
-        <Button variant="outline-secondary">Button</Button>
-      </InputGroup.Append>
-    </InputGroup>
+    <div className="row" style={{width:"30%"}}>
+      <input type="text" className="form-control col-8" />
+      <button type="submit" className="btn btn-primary col-3" style={{marginLeft:"20px"}}>Add Task</button>
+    </div>
   );
 }
 
